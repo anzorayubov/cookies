@@ -16,7 +16,7 @@ export class ListComponent implements OnInit {
     ngOnInit(): void {
         this.tasks = [];
         this.sharedServise.sub.subscribe(data => {
-             this.tasks.push(data);
+             this.tasks.unshift(data);
              console.log(this.tasks)
         })
     }

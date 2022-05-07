@@ -1,10 +1,11 @@
 .container {
     border: 1px solid #dee2e6;
     width: 90vw;
-    min-height: 400px;
+    min-height: 250px;
     border-radius: 20px;
     position: relative;
     overflow: auto;
+    max-height: 500px;
 }
 
 .tasks {

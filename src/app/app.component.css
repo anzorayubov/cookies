@@ -20,6 +20,11 @@ p {
     margin: 0;
 }
 
+.position-fixed {
+    position: fixed;
+    bottom: 0;
+}
+
 .spacer {
     flex: 1;
 }
