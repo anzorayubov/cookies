@@ -1,0 +1,8 @@
+<div class="container">
+    <mat-form-field>
+        <mat-label>Task name</mat-label>
+        <input #input matInput type="text" placeholder="Task name" [(ngModel)]="taskText">
+    </mat-form-field>
+    <button [disabled]="input.value === ''" class="add-button" mat-raised-button color="primary" (click)="addNewTask()">Add</button>
+</div>
+

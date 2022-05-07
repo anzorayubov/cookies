@@ -1,0 +1,6 @@
+<div class="container">
+    <div class="tasks">
+        <app-task *ngFor="let task of tasks" [task]="task"></app-task>
+        <p *ngIf="tasks.length === 0"> пока пусто...</p>
+    </div>
+</div>
