@@ -1,4 +1,7 @@
 <div class="container">
-    <p>{{task}}</p>
+    <p>{{task.title}}
+        <button mat-mini-fab color="primary" aria-label="Delete" (click)="removeTask(task)">
+            <mat-icon>delete</mat-icon>
+        </button>
+    </p>
 </div>
-

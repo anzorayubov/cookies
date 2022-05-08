@@ -1,11 +1,20 @@
+.active {
+    font-weight: bold;
+    font-size: 18px;
+}
+
 .container {
     border: 1px solid #dee2e6;
     width: 90vw;
-    min-height: 250px;
+    min-height: 60vh;
     border-radius: 20px;
-    position: relative;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 6vh;
+    right: 5%;
     overflow: auto;
     max-height: 500px;
+    background-color: aliceblue;
 }
 
 .tasks {
@@ -15,7 +24,6 @@
     flex-direction: column;
     padding-top: 16px;
     width: 100%;
-    /*max-width: 540px;*/
 }
 
 .btn {

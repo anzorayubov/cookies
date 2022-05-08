@@ -1,16 +1,22 @@
 import {Component, Input, OnInit} from '@angular/core';
+import {SharedService} from "../../services/shared.service";
 
 @Component({
-  selector: 'app-task',
-  templateUrl: './task.component.html',
-  styleUrls: ['./task.component.css']
+    selector: 'app-task',
+    templateUrl: './task.component.html',
+    styleUrls: ['./task.component.css']
 })
 export class TaskComponent implements OnInit {
 
-  constructor() { }
-  @Input() task: any;
+    constructor(private sharedService: SharedService) {
+    }
 
-  ngOnInit(): void {
-  }
+    @Input() task: any;
 
+    ngOnInit(): void {
+    }
+
+    removeTask(task: any) {
+        this.sharedService.removeTask(task);
+    }
 }

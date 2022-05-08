@@ -7,4 +7,10 @@
     border-radius: 10px;
     padding: 4px;
     background-color: bisque;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container button {
+    /*width: 30px;*/
 }

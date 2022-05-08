@@ -1,6 +1,6 @@
-<div class="container">
+<div class="container" #day>
     <div class="tasks">
-        <app-task *ngFor="let task of tasks" [task]="task"></app-task>
-        <p *ngIf="tasks.length === 0"> пока пусто...</p>
+        <p>{{currentDay.name}}</p>
+        <app-task *ngFor="let task of currentDay.tasks" [task]="task"></app-task>
     </div>
 </div>
